@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "brand": "Toyota",
+        "model": "Yaris",
+        "description": "just a car",
+        "registration_number": "c1111",
+        "fuelType": "Diesel",
+        "transmission": "Manual"
+    },
+    {
+        "id": 2,
+        "brand": "Toyota",
+        "model": "Prius",
+        "description": "just another car",
+        "registration_number": "c1234",
+        "fuelType": "Petrol",
+        "transmission": "Automatic"
+    }
+]

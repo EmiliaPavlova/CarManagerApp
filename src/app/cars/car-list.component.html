@@ -1,0 +1,36 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        <h4>{{pageTitle}}</h4>
+    </div>
+    <div class='table-responsive'>
+        <table class='table' *ngIf='cars && cars.length'>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Description</th>
+                    <th>Registration Number</th>
+                    <th>Fuel Type</th>
+                    <th>Transmission</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let car of cars'>
+                    <td>{{car.id}}</td>
+                    <td>{{car.brand}}</td>
+                    <td>{{car.model}}</td>
+                    <td>{{car.description}}</td>
+                    <td>{{car.registration_number | uppercase}}</td>
+                    <td>{{car.fuelType}}</td>
+                    <td>{{car.transmission}}</td>
+                    <td>
+                        <button class='btn btn-warning' (click)='editCar()'>Edit</button>
+                        <button class='btn btn-danger' (click)='deleteCar()'>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
